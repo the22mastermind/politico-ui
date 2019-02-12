@@ -30,4 +30,5 @@ while building trust in the process through transparency.
 10. User view all political offices page
 ![](UI/screenshots/offices.png)
 11. User view politicians running for a specific office page
+![](UI/screenshots/candidates.png)
 12. User profile page
