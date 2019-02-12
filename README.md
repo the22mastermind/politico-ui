@@ -13,14 +13,21 @@ while building trust in the process through transparency.
 * jQuery
 
 ### Screenshots
-1. Signup
+1. Home page
+![](UI/screenshots/index.png)
+2. Signup page
 ![](UI/screenshots/signup.png)
-2. Signin
-3. Password reset
-4. Admin create political party
-5. Admin edit or delete political party
-6. Admin create political office
-7. Politician express interest to run for an office
-8. User view all political parties
-9. User view politicians running for a specific office
-10. User profile
+3. Signin page
+![](UI/screenshots/signin.png)
+4. Password reset page
+![](UI/screenshots/password-reset.png)
+5. Admin create political party
+6. Admin edit or delete political party
+7. Admin create political office
+8. Politician express interest to run for an office
+9. User view all political parties page
+![](UI/screenshots/parties.png)
+10. User view all political offices page
+![](UI/screenshots/offices.png)
+11. User view politicians running for a specific office page
+12. User profile page
