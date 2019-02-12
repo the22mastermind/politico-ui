@@ -14,6 +14,7 @@ while building trust in the process through transparency.
 
 ### Screenshots
 1. Signup
+![](UI/screenshots/signup.png)
 2. Signin
 3. Password reset
 4. Admin create political party
