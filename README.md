@@ -5,7 +5,7 @@ Politico enables citizens give their mandate to politicians running for differen
 while building trust in the process through transparency.
 
 ### User Interface
-[Politico](https://the22mastermind.github.io/politico/)
+
 
 ### Technologies Used
 * HTML
