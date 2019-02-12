@@ -1,4 +1,4 @@
-# Politico - User Interface
+## Politico - User Interface
 
 ### Description
 Politico enables citizens give their mandate to politicians running for different government offices 
@@ -8,9 +8,9 @@ while building trust in the process through transparency.
 [Politico](https://the22mastermind.github.io/politico/)
 
 ### Technologies Used
-..* HTML
-..* CSS
-..* jQuery
+* HTML
+* CSS
+* jQuery
 
 ### Screenshots
 1. Signup
