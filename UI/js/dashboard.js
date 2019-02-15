@@ -74,6 +74,6 @@ $(document).ready(function() {
   });
   // Close petition details
   $(".fa-times-thin").on("click", function() {
-    $(".dynamic-content").unload("partials/petitions.html");
+    $(".dynamic-content").close();
   });
 });

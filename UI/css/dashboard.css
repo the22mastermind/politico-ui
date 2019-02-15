@@ -986,7 +986,9 @@ input[name=tags] {
 }
 .fa-edit,
 .fa-trash,
-.fa-info-circle {
+.fa-info-circle,
+.fa-check-circle,
+.fa-times-circle {
 	font-size: 12pt!important;
 }
 .fa-edit {
