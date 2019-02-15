@@ -777,11 +777,25 @@
 	#table-data > tbody > tr > td {
 		padding: 20px 10px 20px 10px;
 	}
-	#party-logo-1 {
+	#party-logo-1,
+	#party-logo-2,
+	#party-logo-3,
+	#party-logo-4 {
 		border-radius: 50%;
 		width: 30px;
 		height: 30px;
+	}
+	#party-logo-1 {
 		background-color: #F9BA32;
+	}
+	#party-logo-2 {
+		background-color: #68A225;
+	}
+	#party-logo-3 {
+		background-color: #F9BA32;
+	}
+	#party-logo-4 {
+		background-color: #C5001A;
 	}
 
 }
@@ -971,7 +985,8 @@ input[name=tags] {
 	width: 464px;
 }
 .fa-edit,
-.fa-trash {
+.fa-trash,
+.fa-info-circle {
 	font-size: 12pt!important;
 }
 .fa-edit {
@@ -980,13 +995,16 @@ input[name=tags] {
 .fa-trash {
 	color: #D70026;
 }
+.fa-info-circle {
+	color: #008DCB;
+}
 button:hover {
 	cursor: pointer;
 }
 .save {
 	background-color: #28a745;
 }
-.abort {
+.red {
 	background-color: #D70026;
 }
 .save,
@@ -1005,4 +1023,47 @@ button:hover {
 .petition-data,
 .user-data {
 	display: none;
+}
+.activated {
+	background-color: #eee!important;
+	color: #555!important;
+}
+.deactivated {
+	background-color: #008DCB!important;
+	color: #FFF!important;
+}
+input[type=text],
+input[type=date],
+input[type=time],
+input[type=email],
+input[type=tel],
+input[type=file],
+input[type=password] {
+	height: 25px;
+	margin-bottom: 15px;
+	border: none;
+	border-bottom: 2px solid #eee;
+}
+.cancel-btn {
+	height: 34px;
+	width: 100%;
+	border-color: transparent;
+	border-radius: 5px;
+	color: #FFF;
+}
+#actions{
+	display: flex;
+	justify-content: center;
+}
+#actions > td {
+	width: 100%;
+}
+#petition-table > tbody > tr > td {
+	padding: 10px;
+}
+.fa-times-thin:before {
+	content: '\00d7';
+}
+.right {
+	float: right;
 }
