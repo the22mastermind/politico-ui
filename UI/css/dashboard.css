@@ -712,27 +712,32 @@
 	.side-menu {
 		margin-right: 50px;
 		float: left;
-		border: 2px solid #eee;
-		padding: 20px;
+		/*border: 2px solid #eee;*/
+		/*padding: 20px;*/
 		width: 10%;
 	}
 	#table-menu {
 		width: 100%;
+		border: 2px solid #eee;
+		padding: 20px;
 	}
 	#table-menu > tbody > tr > td {
 		text-align: center;
 	}
 	#parties,
 	#offices,
-	#petitions {
-		padding: 20px;
+	#petitions,
+	#users {
+		/*padding: 20px;*/
+		padding: 30px;
 		background-color: #008DCB;
 		border-radius: 5px;
 		color: #FFF;
 	}
 	#parties:hover,
 	#offices:hover,
-	#petitions:hover {
+	#petitions:hover,
+	#users:hover {
 		background-color: #eee;
 		color: #555;
 	}
@@ -994,5 +999,10 @@ button:hover {
 }
 .edit-data {
 	visibility: hidden;
+	display: none;
+}
+.office-data,
+.petition-data,
+.user-data {
 	display: none;
 }
