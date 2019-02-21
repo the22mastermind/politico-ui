@@ -1,46 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Questioner">
-  <meta name="author" content="TheMasterMind">
-  <meta name="keywords" content="">
-	<title>Dashboard | Politico</title>
-	<link rel="stylesheet" type="text/css" href="../css/dashboard.css">
-	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
-	<script type="text/javascript" src="../js/jquery.js"></script>
-	<script type="text/javascript" src="../js/custom.js"></script>
-	<script type="text/javascript" src="../js/dashboard.js"></script>
-</head>
-<body>
-	<nav>
-		<div class="home"><a href="../../index.html">Politico</a></div>
-		<button class="navbtn" data-toggle="collapse" data-target="#top-nav-links">
-		    <i class="fa fa-bars"></i>
-		</button>
-		<ul class="top-nav-links">
-			<li id="wlcm">Welcome, John Doe </li>
-			<li><a href="../../index.html">Sign Out</a> </li>
-		</ul>
-	</nav>
-	<div id="mobile-nav-links-wrapper">
-		<div class="mobile-nav-links-subwrapper">
-			<ul class="mobile-nav-links">
-				<li id="wlcm">Welcome, John Doe </li>
-				<li><a href="../../index.html">Sign Out</a> </li>
-			</ul>
-		</div>
-	</div>
-	<div class="container">
-		<div class="feed smalltop smallbottom">
-			<div class="dialog-box">
-				<div class="close"><a href="#" id="close"><i class="fa fa-times"></i></a></div>
-				<p class="dialog-message">This is a dialog box showing a message to the user.</p>
-			</div>
-		</div>
-		<h3 class="dashboard-title">Dashboard</h3>
-	</div>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Questioner">
+    <meta name="author" content="TheMasterMind">
+    <meta name="keywords" content="">
+    <title>Dashboard | Politico</title>
+    <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/custom.js"></script>
+    <script type="text/javascript" src="../js/dashboard.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="home"><a href="../../index.html">Politico</a></div>
+      <button class="navbtn" data-toggle="collapse" data-target="#top-nav-links">
+        <i class="fa fa-bars"></i>
+      </button>
+      <ul class="top-nav-links">
+        <li id="wlcm">Welcome, Jane Doe </li>
+        <li><a href="../../index.html">Sign Out</a> </li>
+      </ul>
+    </nav>
+    <div id="mobile-nav-links-wrapper">
+      <div class="mobile-nav-links-subwrapper">
+        <ul class="mobile-nav-links">
+          <li id="wlcm">Welcome, John Doe </li>
+          <li><a href="../../index.html">Sign Out</a> </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="feed smalltop smallbottom">
+        <div class="dialog-box">
+          <div class="close"><a href="#" id="close"><i class="fa fa-times"></i></a></div>
+          <p class="dialog-message">This is a dialog box showing a message to the regular user.</p>
+        </div>
+      </div>
+      <div id="header">
+        <h3 class="dashboard-title">Dashboard</h3>
+      </div>
+      <div class="content-container">
+        <!-- Side menu -->
+        <div class="side-menu">
+          <table id="table-menu">
+            <tr>
+              <td id="parties">Votes</td>
+            </tr>
+            <tr>
+              <td id="candidates">Settings</td>
+            </tr>
+          </table>
+        </div>
+        <!-- Right content -->
+        <!-- Votes -->
+        <div class="dynamic-content party-data">
+          <div>
+            <table id="table-data">
+              <thead>
+                <tr>
+                  <td>#</td>
+                  <td>Flag</td>
+                  <td>Party Name</td>
+                  <td>Office Name</td>
+                  <td>Candidate</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><div id="party-logo-1"></div></td>
+                  <td>Political Party 1</td>
+                  <td>State Minister</td>
+                  <td>Jane Doe</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td><div id="party-logo-2"></div></td>
+                  <td>Political Party 5</td>
+                  <td>Province Governor</td>
+                  <td>John Doe</td>
+                </tr>                  
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Settings -->
+        <div class="dynamic-content candidate-data">
+          <div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

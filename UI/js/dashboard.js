@@ -1,8 +1,5 @@
 
 $(document).ready(function() {
-  // $("#parties").toggleClass('activated');
-  // $("#parties").css({"background-color":"#eee", "color":"#555"});
-  // $("#offices, #petitions, #users").css({"background-color":"#008DCB", "color":"#FFF"});
   // Edit party
   $(".fa-edit").on("click", function(){
     $(this).closest(".data").css("visibility", "hidden");
@@ -21,35 +18,48 @@ $(document).ready(function() {
   // Navigate side menu
   $('#parties').on('click', function() {
     $('.office-data').css('display', 'none');
+    $('.candidate-data').css('display', 'none');
     $('.petition-data').css('display', 'none');
     $('.user-data').css('display', 'none');
     $('.party-data').css('display', 'block');
     $('#parties').toggleClass('activated');
-    $('#offices, #petitions, #users').removeClass('activated');
+    $('#offices, #candidates, #petitions, #users').removeClass('activated');
   });
   $('#offices').on('click', function() {
     $('.party-data').css('display', 'none');
+    $('.candidate-data').css('display', 'none');
     $('.petition-data').css('display', 'none');
     $('.user-data').css('display', 'none');
     $('.office-data').css('display', 'block');
     $('#offices').toggleClass('activated');
-    $('#parties, #petitions, #users').removeClass('activated');
+    $('#parties, #candidates, #petitions, #users').removeClass('activated');
+  });
+  $('#candidates').on('click', function() {
+    $('.party-data').css('display', 'none');
+    $('.office-data').css('display', 'none');
+    $('.petition-data').css('display', 'none');
+    $('.user-data').css('display', 'none');
+    $('.candidate-data').css('display', 'block');
+    $('#candidates').toggleClass('activated');
+    $('#parties, #offices, #petitions, #users').removeClass('activated');
   });
   $('#petitions').on('click', function() {
     $('.party-data').css('display', 'none');
+    $('.candidate-data').css('display', 'none');
     $('.user-data').css('display', 'none');
     $('.office-data').css('display', 'none');
     $('.petition-data').css('display', 'block');
     $('#petitions').toggleClass('activated');
-    $('#parties, #offices, #users').removeClass('activated');
+    $('#parties, #offices, #candidates, #users').removeClass('activated');
   });
   $('#users').on('click', function() {
     $('.party-data').css('display', 'none');
     $('.office-data').css('display', 'none');
+    $('.candidate-data').css('display', 'none');
     $('.petition-data').css('display', 'none');
     $('.user-data').css('display', 'block');
     $('#users').toggleClass('activated');
-    $('#parties, #offices, #petitions').removeClass('activated');
+    $('#parties, #offices, #candidates, #petitions').removeClass('activated');
   });
 
   // Load create party form
@@ -68,12 +78,16 @@ $(document).ready(function() {
   $("#cancel-office-creation").on("click", function() {
     $(".close-form").close();
   });
+  // Load register candidate form
+  $("#load-candidate-form").on("click", function() {
+    $(".dynamic-content").load("partials/register_candidate.html");
+  });
+  // Close party creation form
+  $("#cancel-candidate-creation").on("click", function() {
+    $(".close-form").close();
+  });
   // View petition details
   $("#view-petitions").on("click", function() {
     $(".dynamic-content").load("partials/petitions.html");
-  });
-  // Close petition details
-  $(".fa-times-thin").on("click", function() {
-    $(".dynamic-content").close();
   });
 });

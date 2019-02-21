@@ -726,6 +726,7 @@
 	}
 	#parties,
 	#offices,
+	#candidates,
 	#petitions,
 	#users {
 		/*padding: 20px;*/
@@ -736,6 +737,7 @@
 	}
 	#parties:hover,
 	#offices:hover,
+	#candidates:hover,
 	#petitions:hover,
 	#users:hover {
 		background-color: #eee;
@@ -1022,6 +1024,7 @@ button:hover {
 	display: none;
 }
 .office-data,
+.candidate-data,
 .petition-data,
 .user-data {
 	display: none;
@@ -1068,4 +1071,7 @@ input[type=password] {
 }
 .right {
 	float: right;
+}
+select {
+	margin-bottom: 20px;
 }
