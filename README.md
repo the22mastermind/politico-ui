@@ -13,7 +13,7 @@ while building trust in the process through transparency.
 * jQuery
 
 ### Screenshots
-1. Home page
+#### 1. Home page
 ![](UI/screenshots/index.png)
 
 2. Signup page
