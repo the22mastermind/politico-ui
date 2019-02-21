@@ -16,35 +16,35 @@ while building trust in the process through transparency.
 #### 1. Home page
 ![](UI/screenshots/index.png)
 
-2. Signup page
+#### 2. Signup page
 ![](UI/screenshots/signup.png)
 
-3. Signin page
+#### 3. Signin page
 ![](UI/screenshots/signin.png)
 
-4. Password reset page
+#### 4. Password reset page
 ![](UI/screenshots/password-reset.png)
 
-5. Admin create political party
+#### 5. Admin create political party
 ![](UI/screenshots/admin-create-party.png)
 
-6. Admin edit or delete political party
+#### 6. Admin edit or delete political party
 ![](UI/screenshots/admin-parties.png)
 
-7. Admin create political office
+#### 7. Admin create political office
 ![](UI/screenshots/admin-create-office.png)
 
-8. Politician express interest to run for an office
+#### 8. Politician express interest to run for an office
 ![](UI/screenshots/admin-register-candidate.png)
 
-9. User view all political parties page
+#### 9. User view all political parties page
 ![](UI/screenshots/parties.png)
 
-10. User view all political offices page
+#### 10. User view all political offices page
 ![](UI/screenshots/offices.png)
 
-11. User view politicians running for a specific office page
+#### 11. User view politicians running for a specific office page
 ![](UI/screenshots/candidates.png)
 
-12. User profile page
+#### 12. User profile page
 ![](UI/screenshots/user-dashboard.png)
